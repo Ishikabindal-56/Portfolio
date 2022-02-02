@@ -1,0 +1,109 @@
+.Resume {
+  height: 100vh;
+  width: 100%;
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    margin-top: 10px;
+    color: #24263b;
+    margin-bottom: 10px;
+    font-family: "Poppins SemiBold";
+  }
+  h5 {
+    color: #24263b;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    font-family: "Poppins Regular";
+  }
+  .ResumeContainer {
+    height: 70%;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .ResumeIcons {
+      flex: 0.05;
+      background-color: #24263b;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 40px 0;
+
+      i {
+        color: var(--white);
+        font-size: 30px;
+        margin: auto;
+        margin-top: 57%;
+        // border: 1px solid white;
+      }
+    }
+    .ResumeList {
+      flex: 0.3;
+      background-color: var(--white);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 40px 0;
+      box-shadow: 15px 0 15px -15px rgb(0, 0, 0);
+      z-index: 2;
+      button {
+        font-family: "Poppins SemiBold";
+        font-size: 20px;
+        text-align: left;
+        background: none;
+        padding: 0;
+        border: none;
+        color: #24263b;
+        width: 90%;
+        // border: 2px solid green;
+        div {
+          padding: 10px;
+          width: 20%;
+          // border:5px solid red;
+          position: absolute;
+          height: 5%;
+        }
+        &:hover div {
+          background-color: #24263b;
+          color: var(--white);
+          border-top-right-radius: 20px;
+          border-bottom-right-radius: 20px;
+    
+          height: 6%;
+          animation: 0.5s linear slide;
+        }
+        &:hover a {
+          color: var(--white);
+          top:3.5px;
+        }
+        a {
+          position: relative;
+          top: -2px;
+          text-decoration: none;
+          color: #24263b;
+          padding: 10px;
+        }
+        @keyframes slide {
+          0% {
+            width: 0%;
+          }
+          100% {
+            width: 20%;
+          }
+        }
+      }
+    }
+    .ResumeDetails {
+      flex: 0.65;
+      background-color: var(--white);
+      height: 100%;
+      // border: 1px solid black;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.Comments {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-image: url(../../../assets/Home/bg.jpg);
+
+  .CommentsContainer {
+    min-height: 76%;
+    width: 100%;
+    padding-top: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+
+    .Card {
+      padding: 30px;
+      height: 85%;
+      width: 450px;
+      box-shadow: 4px 4px 15px -8px white;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      border-radius: 50px 50px 50px 0px;
+      margin: 0 15px;
+
+      .Top {
+        text-align: justify;
+        font-family: "Poppins Regular";
+        color: #24263b;
+        font-style: italic;
+        .fa {
+          font-size: 15px;
+          color: var(--orange);
+          &.fa-quote-left {
+            margin-right: 5px;
+          }
+          &.fa-quote-right {
+            margin-left: 5px;
+          }
+        }
+      }
+      .Middle {
+        font-size: 25px;
+        .fa {
+          margin-right: 3px;
+          color: var(--orange);
+        }
+      }
+      .Bottom {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-start;
+        .User {
+          height: 100px;
+          width: 100px;
+          border-radius: 50%;
+
+          &:hover {
+            transform: scale(1.07);
+            transition: 1s ease-out;
+          }
+        }
+        .Tittle {
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          justify-content: flex-start;
+          h3 {
+            font-family: "Poppins SemiBold";
+            color: #24263b;
+          }
+          h4 {
+            font-family: "Poppins Light";
+            font-style: italic;
+          }
+        }
+      }
+      &:hover {
+        transform: scale(1.05);
+        transition: 1s ease-out;
+      }
+    }
+  }
+}

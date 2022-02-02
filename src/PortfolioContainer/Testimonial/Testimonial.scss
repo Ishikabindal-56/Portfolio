@@ -1,0 +1,21 @@
+.TestContainer {
+  display: flex;
+  min-height: 100vh;
+  padding-top: 100px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  box-sizing: border-box;
+  h1 {
+    margin-top: 10px;
+    color: #24263b;
+    margin-bottom: 10px;
+    font-family: "Poppins SemiBold";
+  }
+  h5 {
+    color: #24263b;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    font-family: "Poppins Regular";
+  }
+}
