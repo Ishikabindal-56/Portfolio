@@ -1,0 +1,36 @@
+.DSkills {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 20px;
+  .DProgress {
+    flex: 0.8;
+    padding: 5px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    .DLeft {
+      flex: 0.5;
+      height: 100%;
+      width: 100%;
+    }
+    .DRight {
+      flex: 0.5;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .DConclusion {
+    flex: 0.2;
+    height: 100%;
+    font-size: 18px;
+    text-align: justify;
+    padding: 5px;
+    font-family: "Poppins Regular";
+    color: var(--main-color);
+  }
+}

@@ -58,13 +58,15 @@
         text-align: left;
         background: none;
         padding: 0;
+        margin-top: 24px;
         border: none;
         color: #24263b;
         width: 90%;
-        // border: 2px solid green;
+        outline: none;
         div {
           padding: 10px;
           width: 20%;
+          outline: none;
           // border:5px solid red;
           position: absolute;
           height: 5%;
@@ -74,20 +76,23 @@
           color: var(--white);
           border-top-right-radius: 20px;
           border-bottom-right-radius: 20px;
-    
-          height: 6%;
-          animation: 0.5s linear slide;
+          outline: none;
+          height: 8%;
+          animation: 0.5s 1 linear slide forwards;
+          // animation: name duration timing-function delay iteration-count direction fill-mode;
         }
-        &:hover a {
+        &:hover p {
           color: var(--white);
-          top:3.5px;
+          top: 3.5px;
+          outline: none;
         }
-        a {
+        p {
           position: relative;
           top: -2px;
           text-decoration: none;
           color: #24263b;
           padding: 10px;
+          outline: none;
         }
         @keyframes slide {
           0% {
@@ -103,7 +108,7 @@
       flex: 0.65;
       background-color: var(--white);
       height: 100%;
-      // border: 1px solid black;
+      overflow: auto;
     }
   }
 }

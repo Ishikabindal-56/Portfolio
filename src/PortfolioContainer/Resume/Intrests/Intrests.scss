@@ -1,0 +1,43 @@
+.IntrestContainer {
+  height: 100%;
+  width: 100%;
+//   background-color: lightblue;
+  padding: 20px 20px;
+  
+
+  dl {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    // border: 1px solid red;
+    padding: 15px;
+    .IHobby {
+      .ITitle {
+        font-family: "Poppins SemiBold";
+        font-size: 20px;
+        color: var(--dark-orange);
+        padding-left: 20px;
+        //   top: -15px;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          left: -9px;
+          top: 5px;
+          height: 15px;
+          width: 15px;
+          border-radius: 50%;
+          border: 2px solid var(--dark-orange);
+          background-color: var(--dark-orange);
+        }
+      }
+      .IDesc {
+        color: var(--main-color);
+        padding: 8px 20px;
+        font-family: "Poppins Regular";
+        font-size: 18px;
+      }
+    }
+  }
+}

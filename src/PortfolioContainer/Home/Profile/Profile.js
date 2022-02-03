@@ -10,19 +10,19 @@ export default function Profile() {
           <div className="colz">
             <div className="colz-icon">
               <a href="https://www.facebook.com/profile.php?id=100009005623592">
-                <i className="fa fa-facebook-square"></i>
+                <i className="fab fa-facebook-square"></i>
               </a>
               <a href="https://www.linkedin.com/in/ishika-bindal-b094911aa/">
-                <i className="fa fa-linkedin-square"></i>
+                <i className="fab fa-linkedin"></i>
               </a>
               <a href="https://www.instagram.com/ishikabindal56/">
-                <i className="fa fa-instagram"></i>
+                <i className="fab fa-instagram"></i>
               </a>
               <a href="https://github.com/Ishikabindal-56">
-                <i className="fa fa-github"></i>
+                <i className="fab fa-github"></i>
               </a>
               <a href="https://wa.me/qr/X35QRTZ65IZVO1">
-                <i className="fa fa-whatsapp"></i>
+                <i className="fab fa-whatsapp"></i>
               </a>
             </div>
           </div>

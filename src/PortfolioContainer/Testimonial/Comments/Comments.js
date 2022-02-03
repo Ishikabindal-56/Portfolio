@@ -6,25 +6,24 @@ export default function Comments() {
   const data = [
     {
       id: 1,
-      name: "Tom Durden",
-      title: "Senior Developer",
+      name: "Covid Tracker",
+      title: "React",
       image: "female",
-
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam enim diam, tempus vel ultricies viverra, luctus in elit.",
+      desc: "Developed a Covid-19 Tracker which shows the complete data about covid cases throughout the world. All the data is fetched through api.",
     },
     {
       id: 2,
-      name: "Alex Kalinski",
-      title: "Co-Founder of DELKA",
+      name: "Real Estate Website",
+      title: "React and Redux",
       image: "kid",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
+      desc: "Developed a Real Estate Website application with fully functional login system using redux. Application also contains a full functional whislist",
     },
     {
       id: 3,
-      name: "Martin Harold",
-      title: "CEO of ALBI",
+      name: "Weather App",
+      title: "Javascript",
       image: "male",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam enim diam, tempus vel ultricies viverra, luctus in elit. Aliquam tempus blandit velit.",
+      desc: "Developed a Web application shows dynamic weather report using javascript and openweather web api",
     },
   ];
   return (
@@ -32,20 +31,8 @@ export default function Comments() {
       <div className="CommentsContainer">
         {data.map((d) => (
           <div className="Card">
-            <div className="Top">
-              <p className="description">
-                <i class="fa fa-quote-left" aria-hidden="true"></i>
-                {d.desc}
-                <i class="fa fa-quote-right" aria-hidden="true"></i>
-              </p>
-            </div>
-            <div className="Middle">
-              <span className="fa fa-star checked"></span>
-              <span className="fa fa-star checked"></span>
-              <span className="fa fa-star checked"></span>
-              <span className="fa fa-star checked"></span>
-            </div>
-            <div className="Bottom">
+
+          <div className="Bottom">
               <img
                 className="User"
                 src={require(`../../../assets/Home/${d.image}.png`)}
@@ -56,7 +43,20 @@ export default function Comments() {
                 <h4>{d.title}</h4>
               </div>
             </div>
-          </div>
+            <div className="Top">
+              <p className="description">
+                <i className="fa fa-quote-left" aria-hidden="true"></i>
+                {d.desc}
+                <i className="fa fa-quote-right" aria-hidden="true"></i>
+              </p>
+            </div>
+            {/* <div className="Middle">
+              <span className="fa fa-star checked"></span>
+              <span className="fa fa-star checked"></span>
+              <span className="fa fa-star checked"></span>
+              <span className="fa fa-star checked"></span>
+            </div> */}
+            </div>
         ))}
       </div>
       <div className="FooterTest">
