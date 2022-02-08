@@ -18,6 +18,7 @@ export default function Comments() {
           <CommentsCard
             id="1"
             name="Covid Tracker"
+            link="https://github.com/Ishikabindal-56/Covid-Tracker"
             title="React"
             image="Covid"
             desc="Developed a Covid-19 Tracker which shows the complete data about covid cases throughout the world."
@@ -25,6 +26,7 @@ export default function Comments() {
           <CommentsCard
             id="2"
             name="Real Estate Website"
+            link="#"
             title="React and Redux"
             image="RealEstate"
             desc="Developed a Real Estate Website application with fully functional login system using redux. "
@@ -40,6 +42,7 @@ export default function Comments() {
           <CommentsCard
             id="4"
             name="Portfolio"
+            link="#"
             title="React"
             image="AboutMe"
             desc="Developed a fully responsive portfolio website using ReactJS which completely describes about me."
@@ -47,6 +50,7 @@ export default function Comments() {
           <CommentsCard
             id="5"
             name="E-commerce Site"
+            link="#"
             title="React, NodeJS, Express"
             image="ECommerce"
             desc="Developed a React-based frontend for an e-commerce website with a fully functional shopping cart"
