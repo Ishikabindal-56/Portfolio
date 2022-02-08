@@ -18,7 +18,7 @@ export default function Comments() {
           <CommentsCard
             id="1"
             name="Covid Tracker"
-            link="https://github.com/Ishikabindal-56/Covid-Tracker"
+            link="https://app.netlify.com/sites/nifty-clarke-28a9e0/overview"
             title="React"
             image="Covid"
             desc="Developed a Covid-19 Tracker which shows the complete data about covid cases throughout the world."
