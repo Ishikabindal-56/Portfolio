@@ -7,17 +7,17 @@ export default function DevelopmentSkills() {
     <div className="DSkills">
       <div className="DProgress">
         <div className="DLeft">
-          <Progressbar text="HTML" progress="90" height={20} />
-          <Progressbar text="CSS" progress="80" height={20} />
-          <Progressbar text="Javascript" progress="75" height={20} />
-          <Progressbar text="JQuery" progress="80" height={20} />
-          <Progressbar text="React" progress="75" height={20} />
+          <Progressbar text="HTML" progress="90" />
+          <Progressbar text="CSS" progress="80" />
+          <Progressbar text="Javascript" progress="75" />
+          <Progressbar text="JQuery" progress="80" />
+          <Progressbar text="React" progress="75" />
         </div>
         <div className="DRight">
-          <Progressbar text="Bootstrap" progress="80" height={20} />
-          <Progressbar text="NodeJS" progress="65" height={20} />
-          <Progressbar text="Express" progress="70" height={20} />
-          <Progressbar text="MongoDB" progress="75" height={20} />
+          <Progressbar text="Bootstrap" progress="80" />
+          <Progressbar text="NodeJS" progress="65" />
+          <Progressbar text="Express" progress="70" />
+          <Progressbar text="MongoDB" progress="75" />
         </div>
       </div>
       <div className="DConclusion">

@@ -31,7 +31,7 @@ export default function Education() {
         <div className="EducationContainer">
           <div className="left-content">
           <i className="fas fa-calendar-alt"></i>
-            <p>{d.year}</p>
+            <p className="EYear">{d.year}</p>
           </div>
           <div className="right-content">
             <h5 className="EducationTitle">{d.title}</h5>

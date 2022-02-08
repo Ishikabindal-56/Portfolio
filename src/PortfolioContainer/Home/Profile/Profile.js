@@ -46,7 +46,7 @@ export default function Profile() {
                     2000,
                     "MERN Stack dev 😎",
                     2000,
-                    "React/React Native dev 📱",
+                    "React developer 📱",
                     2000,
                   ]}
                 />
@@ -58,7 +58,9 @@ export default function Profile() {
             </span>
           </div>
           <div className="profile-options">
-            <button className="btn primary-btn"> Hire Me </button>
+            <a href="#ContactMe">
+              <button className="btn primary-btn"> Hire Me </button>
+            </a>
             <a href="ishika.pdf" download="ishika.pdf">
               <button className="btn highlighted-btn">Get Resume</button>
             </a>

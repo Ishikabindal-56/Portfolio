@@ -5,9 +5,9 @@ import "./Testimonial.scss";
 export default function Home() {
   return (
     <div className="TestContainer" id="Testimonial">
-      <h1>Projects</h1>
-          <h5>What My Client Say About Me?</h5>
-          <div className="rule"></div>
+      <h1 className="TestTitle">Projects</h1>
+      <h5 className="TestSubtitle">Projects I Have Designed</h5>
+      <div className="rule"></div>
       <Comments />
     </div>
   );
