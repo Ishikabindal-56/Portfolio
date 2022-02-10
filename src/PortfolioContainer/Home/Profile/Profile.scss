@@ -77,7 +77,7 @@
 
 @media screen and (max-width: 1110px) {
   .profile-picture {
-    margin: 0 0px 0 80px;
+    margin: 0 20px 0 60px;
   }
   .profile-detail-name {
     font-size: 20px;
@@ -96,7 +96,7 @@
   .profile-picture {
     height: 320px;
     width: 320px;
-    margin: 0 0px 0 4px;
+    margin: 0 15px 0 0;
   }
 }
 
@@ -110,7 +110,7 @@
   }
   .profile-options {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .profile-details {
     margin: 25px 0 0;

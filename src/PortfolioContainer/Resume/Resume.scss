@@ -129,6 +129,19 @@
             top: 3.5px;
             outline: none;
           }
+          .resumebackground{
+            background-color: #24263b;
+            color: var(--white);
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            outline: none;
+            height: 8%;
+          }
+          .pbackground{
+            color: var(--white);
+            top: 3.5px;
+            outline: none;
+          }
           p {
             position: relative;
             top: -2px;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Resume.scss";
 import Education from "./Education/Education";
 import ProgrammingSkills from "./ProgrammingSkills/ProgrammingSkills";
@@ -6,6 +6,7 @@ import DevelopmentSkills from "./DevelopmentSkills/DevelopmentSkills";
 import Intrests from "./Intrests/Intrests";
 
 export default function Resume() {
+  const [currpage,setcurrpage] = useState("Education");
   const scrollResume = (y) => {
     document
       .querySelector(".ResumeDetails")
@@ -25,25 +26,25 @@ export default function Resume() {
             <i className="fas fa-palette" aria-hidden="true"></i> */}
           </div>
           <div className="ResumeList">
-            <button className="Education" onClick={() => scrollResume(0)}>
-              <div></div>
+            <button className="Education" onClick={() => {scrollResume(0); setcurrpage("Educations");}}>
+              <div className={currpage=="Education"&&"resumebackground"}></div>
               <i className="fas fa-user-graduate" aria-hidden="true"></i>
-              <p>Education</p>
+              <p className={currpage=="Education"&&"pbackground"}>Education</p>
             </button>
-            <button className="ProgrammingSkills" onClick={() => scrollResume(1)}>
-              <div></div>
+            <button className="ProgrammingSkills" onClick={() => {scrollResume(1); setcurrpage("ProgrammingSkills");}}>
+              <div className={currpage=="ProgrammingSkills"&&"resumebackground"}></div>
               <i className="fas fa-file-code"></i>
-              <p>Programming Skills</p>
+              <p className={currpage=="ProgrammingSkills"&&"pbackground"}>Programming Skills</p>
             </button>
-            <button className="Projects" onClick={() => scrollResume(2)}>
-              <div></div>
+            <button className="Projects" onClick={() => {scrollResume(2); setcurrpage("Projects")}}>
+              <div className={currpage=="Projects"&&"resumebackground"}></div>
               <i className="far fa-chart-bar" aria-hidden="true"></i>
-              <p>Development Skills</p>
+              <p className={currpage=="Projects"&&"pbackground"}>Development Skills</p>
             </button>
-            <button className="Intrests" onClick={() => scrollResume(3)}>
-              <div></div>
+            <button className="Intrests" onClick={() => {scrollResume(3); setcurrpage("Intrests");}}>
+              <div className={currpage=="Intrests"&&"resumebackground"}></div>
               <i className="fas fa-palette" aria-hidden="true"></i>
-              <p>Intrests</p>
+              <p className={currpage=="Intrests"&&"pbackground"}>Intrests</p>
             </button>
           </div>
         </div>

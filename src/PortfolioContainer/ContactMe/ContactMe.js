@@ -57,7 +57,7 @@ export default function ContactMe() {
             <img src={require("../../assets/Home/mailz.jpeg")} alt="" />
           </div>
           <div className="CRight">
-            <form onSubmit={sendEmail || handleSubmit}>
+            <form onSubmit={(e)=>{handleSubmit(e); sendEmail(e);}}>
               <div className="form-group">
                 <label htmlFor="FormControlInput1">Name</label>
                 <input

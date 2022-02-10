@@ -94,6 +94,12 @@
           font-family: "Poppins Regular";
           float: right;
         }
+        @media screen and (max-width: 800px) {
+          button{
+            width: 130px;
+            font-size: 16px;
+          }
+        }
       }
     }
   }
