@@ -27,24 +27,24 @@ export default function Resume() {
           </div>
           <div className="ResumeList">
             <button className="Education" onClick={() => {scrollResume(0); setcurrpage("Educations");}}>
-              <div className={currpage=="Education"&&"resumebackground"}></div>
+              <div className={currpage==="Education"&&"resumebackground"}></div>
               <i className="fas fa-user-graduate" aria-hidden="true"></i>
-              <p className={currpage=="Education"&&"pbackground"}>Education</p>
+              <p className={currpage==="Education"&&"pbackground"}>Education</p>
             </button>
             <button className="ProgrammingSkills" onClick={() => {scrollResume(1); setcurrpage("ProgrammingSkills");}}>
-              <div className={currpage=="ProgrammingSkills"&&"resumebackground"}></div>
+              <div className={currpage==="ProgrammingSkills"&&"resumebackground"}></div>
               <i className="fas fa-file-code"></i>
-              <p className={currpage=="ProgrammingSkills"&&"pbackground"}>Programming Skills</p>
+              <p className={currpage==="ProgrammingSkills"&&"pbackground"}>Programming Skills</p>
             </button>
             <button className="Projects" onClick={() => {scrollResume(2); setcurrpage("Projects")}}>
-              <div className={currpage=="Projects"&&"resumebackground"}></div>
+              <div className={currpage==="Projects"&&"resumebackground"}></div>
               <i className="far fa-chart-bar" aria-hidden="true"></i>
-              <p className={currpage=="Projects"&&"pbackground"}>Development Skills</p>
+              <p className={currpage==="Projects"&&"pbackground"}>Development Skills</p>
             </button>
             <button className="Intrests" onClick={() => {scrollResume(3); setcurrpage("Intrests");}}>
-              <div className={currpage=="Intrests"&&"resumebackground"}></div>
+              <div className={currpage==="Intrests"&&"resumebackground"}></div>
               <i className="fas fa-palette" aria-hidden="true"></i>
-              <p className={currpage=="Intrests"&&"pbackground"}>Intrests</p>
+              <p className={currpage==="Intrests"&&"pbackground"}>Intrests</p>
             </button>
           </div>
         </div>
