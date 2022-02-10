@@ -36,7 +36,7 @@ export default function CommentsCard(props) {
             alt=""
           />
           <div className="Tittle">
-            <a className="linkk" href={props.link} target="_blank">
+            <a className="linkk" href={props.link} target="_blank" rel="noopener noreferrer">
               <h3 className="a">{props.name}</h3>
             </a>
             <h4 className="b">{props.title}</h4>
