@@ -44,7 +44,7 @@ export default function Resume() {
             <button className="Intrests" onClick={() => {scrollResume(3); setcurrpage("Intrests");}}>
               <div className={currpage==="Intrests"&&"resumebackground"}></div>
               <i className="fas fa-palette" aria-hidden="true"></i>
-              <p className={currpage==="Intrests"&&"pbackground"}>Intrests</p>
+              <p className={currpage==="Intrests"&&"pbackground"}>Interests</p>
             </button>
           </div>
         </div>
